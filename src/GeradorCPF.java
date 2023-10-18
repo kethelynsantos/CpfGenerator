@@ -29,8 +29,7 @@ public class GeradorCPF {
 
         int dezena = (soma % 11) <= 1 ? 0 : 11 - (soma % 11);
 
-        // Agora, vamos calcular o dígito final (10º dígito)
-        cpfBase = cpfBase + dezena; // Adicionando a dezena calculada
+        cpfBase = cpfBase + dezena; 
 
         soma = 0;
         peso = 2;
